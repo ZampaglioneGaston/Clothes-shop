@@ -1,0 +1,10 @@
+{
+  "bestBtn"       : "#home-page-tabs .blockbestsellers",
+  "bestContainer" : "#homefeatured .product-container",
+  "prodName"      : ".product-name",
+  "price"         : ".price",
+  "cartLayer"     : "#layer_cart_product_title",
+
+  "womenDrop"     : "#block_top_menu > ul > li:nth-child(1) > ul"
+
+}
