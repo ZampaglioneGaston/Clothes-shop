@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-18T13:34:34.940Z",
+    "end": "2021-06-18T13:34:49.573Z",
+    "duration": 14633,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "38af8dd9-1e05-4c76-b727-69814f5bcd7c",
+      "title": "",
+      "fullFile": "cypress/integration/testSuite.js",
+      "file": "cypress/integration/testSuite.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "73f500ba-2436-4a29-a9df-ae80e080b98a",
+          "title": "Store",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "List",
+              "fullTitle": "Store List",
+              "timedOut": null,
+              "duration": 10809,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.addSpecific('pageObj', 'Printed Dress', '26.00');",
+              "err": {},
+              "uuid": "3c9f4c27-1a54-4063-80cf-79851328b3fc",
+              "parentUUID": "73f500ba-2436-4a29-a9df-ae80e080b98a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invoke",
+              "fullTitle": "Store Invoke",
+              "timedOut": null,
+              "duration": 3733,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(this.pageObj.womenDrop).invoke('attr', 'style', 'display:block').find('li').each(($el, i) => {\n  cy.get($el).should('be.visible');\n});",
+              "err": {},
+              "uuid": "13e20dab-67a6-480f-82f0-a07a66dbf89a",
+              "parentUUID": "73f500ba-2436-4a29-a9df-ae80e080b98a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c9f4c27-1a54-4063-80cf-79851328b3fc",
+            "13e20dab-67a6-480f-82f0-a07a66dbf89a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14542,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

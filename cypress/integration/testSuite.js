@@ -10,7 +10,7 @@ describe("Store", function () {
     })
 
 
-    it.only('List', function () {
+    it('List', function () {
         cy.addSpecific('pageObj', 'Printed Dress', '26.00');
     });
 

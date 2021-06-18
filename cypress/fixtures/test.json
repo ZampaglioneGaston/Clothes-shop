@@ -1,0 +1,29 @@
+{
+    "drink": "soda",
+    "ingredients": [
+        "carbonated water",
+        "corn syrup",
+        "caffeine",
+        "natural flavor"
+    ],
+    "brands": [
+        {
+            "name": "Coca-Cola",
+            "Country": "US",
+            "presentation_ml": "355",
+            "presentation_oz": "12"
+        },
+        {
+            "name": "Kvas",
+            "Country": "Russia",
+            "presentation_ml": "437",
+            "presentation_oz": "15"
+        },
+        {
+            "name": "Schweppes",
+            "Country": "Republic of Geneva",
+            "presentation_ml": "355",
+            "presentation_oz": "12"
+        }
+    ]
+}

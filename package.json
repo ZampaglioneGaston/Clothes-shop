@@ -6,9 +6,17 @@
   "dependencies": {
     "cypress": "^7.4.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^9.0.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "npm-run-all": "^4.1.5"
+  },
   "scripts": {
-    "test": "npx cypress open"
+    "cypress:open": "cypress open",
+    "merge": "mochawesome-merge ./report/*.json > ./report.json",
+    "generate_mochawesome_report": "marge cypress/reports/output.json --reportDir ./ --inline",
+    "final_report": "npm run merge && npm run generate_mochawesome_report"
   },
   "author": "",
   "license": "ISC"
